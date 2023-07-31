@@ -3,9 +3,9 @@
     <thead>
         <tr>
             <th>N.</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Operations</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Editar</th>
         </tr>
     </thead>
 
@@ -18,14 +18,14 @@
             <td>
                 
                 {{#if done}}
-                    <a href="/toggleDone/{{_id}}" class="btn btn-secondary btn-sm">Undone</a>
+                    <a href="/toggleDone/{{_id}}" class="btn btn-secondary btn-sm">Falta</a>
                 {{else}}
-                    <a href="/toggleDone/{{_id}}" class="btn btn-success btn-sm">Done</a>
+                    <a href="/toggleDone/{{_id}}" class="btn btn-success btn-sm">Comprado</a>
                 {{/if}}
 
 
-                <a href="/delete/{{_id}}" class="btn btn-danger btn-sm">Delete</a>
-                <a href="/edit/{{_id}}" class="btn btn-info btn-sm">Update</a>
+                <a href="/delete/{{_id}}" class="btn btn-danger btn-sm">Borrar</a>
+                <a href="/edit/{{_id}}" class="btn btn-info btn-sm">Actualizar</a>
             </td>
         </tr>
         {{/each}}

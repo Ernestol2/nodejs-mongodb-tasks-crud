@@ -1,30 +1,30 @@
 <div class="card card-body p-4 bg-dark text-white">
 
-  <h3>Add a Task</h3>
+  <h3>Agrega un producto</h3>
 
   <form action="/tasks/add" method="POST">
     <div>
-      <label for="title">Write a Title:</label>
+      <label for="title">Nombre:</label>
       <input
         type="text"
         name="title"
         id="title"
         class="form-control bg-dark text-white"
-        placeholder="Title"
+        placeholder="Ejm. Azucar"
       />
     </div>
 
 
     <div>
-      <label for="description">Description:</label>
+      <label for="description">Descripcion:</label>
       <textarea
         name="description"
         id="description"
         class="form-control bg-dark text-white"
-        placeholder="Description"
+        placeholder="Ejm. 2 kilos"
       ></textarea>
     </div>
 
-    <button class="btn btn-primary btn-sm mt-2">Add Task</button>
+    <button class="btn btn-primary btn-sm mt-2">Agregar producto</button>
   </form>
 </div>
